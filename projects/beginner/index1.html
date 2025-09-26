@@ -1,36 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeeksforGeeks Form</title>
+    <link rel= "stylesheet" href="style.css" type="text/css">
+</head>
+<body>
     <form action="" method="get">
-        <fieldset>
-            <p>
-            <label for="name">Name</label>
-            <br>
+        <p>
+            <label for="name">Name</label><br>
             <input type="text" name="name" id="name" placeholder="Enter your name" autocomplete="on" required autofocus>
-            </p>
-            <p>
-            <label for="email">Email</label>
-            <br>
-            <input type="email" name="email" id="email" placeholder="Enter your email" autofocus required>
-            </p>
-            <p>
-            <label for="age">Age</label>
-            <br>
-            <input type="number" name="age" id="age" placeholder="Enter your age" autofocus required>
-            </p>
-            <p>
-                <label for="Which best describes you?">Which best describes you?</label>
-                <br>
-                <select name="role" id="role">
-                    <option value="student">Student</option>
-                    <option value="professional">Professional</option>
-                    <option value=" hobbyist">Hobbyist</option>
-                    <option value="other">Other</option>
-                    </optgroup>
-                </select>
+        </p>
+        
+        <p>
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        </p>
+        
+        <p>
+            <label for="age">Age</label><br>
+            <input type="number" name="age" id="age" placeholder="Enter your age" required>
+        </p>
+        
+        <p>
+            <label for="role">Which best describes you?</label><br>
+            <select name="role" id="role">
+                <option value="student">Student</option>
+                <option value="professional">Professional</option>
+                <option value="hobbyist">Hobbyist</option>
+                <option value="other">Other</option>
+            </select>
+        </p>
+        <fieldset>
+            <legend>Would you recommend GeeksforGeeks to a friend?</legend>
+            <input type="radio" name="choice" id="yes" value="yes">
+            <label for="yes">Yes</label><br>
 
-                
+            <input type="radio" name="choice" id="no" value="no">
+            <label for="no">No</label><br>
 
-
-            </p>
+            <input type="radio" name="choice" id="maybe" value="maybe">
+            <label for="maybe">Maybe</label>
         </fieldset>
-    </form>
+        <fieldset>
+          <legend>Languages and Frameworks known (check all that apply)</legend>
+      
+          <input type="checkbox" name="lang" id="C" value="C">
+          <label for="C">C</label><br>
+
+          <input type="checkbox" name="lang" id="C++" value="C++">
+          <label for="C++">C++</label><br>
+
+          <input type="checkbox" name="lang" id="C#" value="C#">
+          <label for="C#">C#</label><br>
+
+          <input type="checkbox" name="lang" id="Java" value="Java">
+          <label for="Java">Java</label><br>
+
+          <input type="checkbox" name="lang" id="Python" value="Python">
+          <label for="Python">Python</label><br>
+
+          <input type="checkbox" name="lang" id="Javascript" value="Javascript">
+          <label for="Javascript">JavaScript</label><br>
+
+          <input type="checkbox" name="lang" id="React" value="React">
+          <label for="React">React</label><br>
+
+          <input type="checkbox" name="lang" id="Angular" value="Angular">
+          <label for="Angular">Angular</label><br>
+
+          <input type="checkbox" name="lang" id="Django" value="Django">
+          <label for="Django">Django</label><br>
+
+          <input type="checkbox" name="lang" id="Spring" value="Spring">
+          <label for="Spring">Spring</label>
+        </fieldset>
+
+    <p>
+      <label for="message">Any comments or suggestions</label><br>
+      <textarea name="message" id="message" placeholder="Enter your comment here"></textarea>
+    </p>
+
+    <p>
+      <button type="submit">Submit</button>
+    </p>
+
+  </form>
+</body>
+</html>
+                  
